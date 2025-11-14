@@ -1,0 +1,420 @@
+2025-11-14 08:17:46.196 [main] INFO  api.utilities.ExtentReportManager - ========== Initializing Extent Report ==========
+2025-11-14 08:17:46.201 [main] INFO  api.utilities.ExtentReportManager - Report will be generated at: /Users/irfankhan/eclipse-workspace/PetStoreAutomation/reports/Test-Report-2025.11.14.08.17.46.html
+2025-11-14 08:17:46.260 [main] INFO  api.utilities.ExtentReportManager - Extent Report initialized successfully
+2025-11-14 08:17:46.344 [main] INFO  api.test.UserTests - ******* Creating user********
+2025-11-14 08:17:46.345 [main] INFO  api.endpoints.UserEndPoints - ==> POST https://petstore.swagger.io/v2/user
+2025-11-14 08:17:48.611 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateUser
+2025-11-14 08:17:48.613 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:17:50.233 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testGetUser
+2025-11-14 08:17:50.238 [main] INFO  api.endpoints.UserEndPoints - ==> PUT https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:17:51.819 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:17:53.409 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testUpdateUser
+2025-11-14 08:17:53.413 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:17:55.453 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testDeleteUser
+2025-11-14 08:17:55.474 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:17:55.475 [main] INFO  api.test.DDTests - ║  TEST START: User = user101 (ID: 101)
+2025-11-14 08:17:55.475 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-14 08:17:55.475 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user101
+2025-11-14 08:17:55.476 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:17:56.917 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-14 08:17:56.918 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user101
+2025-11-14 08:17:56.918 [main] INFO  api.endpoints.UserEndPoints - ==> POST https://petstore.swagger.io/v2/user
+2025-11-14 08:17:58.265 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-14 08:17:58.268 [main] INFO  api.test.DDTests - ✓ User created successfully: user101
+2025-11-14 08:17:58.268 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-14 08:17:58.269 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:18:00.363 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:18:01.743 [main] INFO  api.test.DDTests - ✓ User found on attempt 2: user101
+2025-11-14 08:18:01.744 [main] INFO  api.test.DDTests - ✓ User verification successful: user101
+2025-11-14 08:18:01.744 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-14 08:18:01.745 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:18:03.855 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:18:05.301 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 2: user101
+2025-11-14 08:18:05.302 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user101
+2025-11-14 08:18:05.303 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:18:05.304 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user101 ✓
+2025-11-14 08:18:05.305 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-14 08:18:05.307 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateAndDeleteUser
+2025-11-14 08:18:05.308 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:18:05.309 [main] INFO  api.test.DDTests - ║  TEST START: User = user102 (ID: 102)
+2025-11-14 08:18:05.309 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-14 08:18:05.309 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user102
+2025-11-14 08:18:05.309 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:18:06.623 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-14 08:18:06.624 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user102
+2025-11-14 08:18:06.624 [main] INFO  api.endpoints.UserEndPoints - ==> POST https://petstore.swagger.io/v2/user
+2025-11-14 08:18:07.945 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-14 08:18:07.946 [main] INFO  api.test.DDTests - ✓ User created successfully: user102
+2025-11-14 08:18:07.947 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-14 08:18:07.947 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:18:09.255 [main] INFO  api.test.DDTests - ✓ User found on attempt 1: user102
+2025-11-14 08:18:09.256 [main] INFO  api.test.DDTests - ✓ User verification successful: user102
+2025-11-14 08:18:09.257 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-14 08:18:09.257 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:18:10.570 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 1: user102
+2025-11-14 08:18:10.571 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user102
+2025-11-14 08:18:10.571 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:18:10.571 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user102 ✓
+2025-11-14 08:18:10.571 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-14 08:18:10.573 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateAndDeleteUser
+2025-11-14 08:18:10.574 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:18:10.575 [main] INFO  api.test.DDTests - ║  TEST START: User = user103 (ID: 103)
+2025-11-14 08:18:10.575 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-14 08:18:10.575 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user103
+2025-11-14 08:18:10.576 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:18:11.996 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-14 08:18:11.997 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user103
+2025-11-14 08:18:11.997 [main] INFO  api.endpoints.UserEndPoints - ==> POST https://petstore.swagger.io/v2/user
+2025-11-14 08:18:13.303 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-14 08:18:13.305 [main] INFO  api.test.DDTests - ✓ User created successfully: user103
+2025-11-14 08:18:13.306 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-14 08:18:13.306 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:18:15.409 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:18:16.836 [main] INFO  api.test.DDTests - ✓ User found on attempt 2: user103
+2025-11-14 08:18:16.837 [main] INFO  api.test.DDTests - ✓ User verification successful: user103
+2025-11-14 08:18:16.837 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-14 08:18:16.838 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:18:18.161 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 1: user103
+2025-11-14 08:18:18.162 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user103
+2025-11-14 08:18:18.162 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:18:18.163 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user103 ✓
+2025-11-14 08:18:18.163 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-14 08:18:18.165 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateAndDeleteUser
+2025-11-14 08:18:18.166 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:18:18.167 [main] INFO  api.test.DDTests - ║  TEST START: User = user104 (ID: 104)
+2025-11-14 08:18:18.170 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-14 08:18:18.170 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user104
+2025-11-14 08:18:18.176 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:18:19.499 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-14 08:18:19.500 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user104
+2025-11-14 08:18:19.500 [main] INFO  api.endpoints.UserEndPoints - ==> POST https://petstore.swagger.io/v2/user
+2025-11-14 08:18:20.915 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-14 08:18:20.915 [main] INFO  api.test.DDTests - ✓ User created successfully: user104
+2025-11-14 08:18:20.915 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-14 08:18:20.915 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:18:23.051 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:18:25.246 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:18:26.578 [main] INFO  api.test.DDTests - ✓ User found on attempt 3: user104
+2025-11-14 08:18:26.578 [main] INFO  api.test.DDTests - ✓ User verification successful: user104
+2025-11-14 08:18:26.579 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-14 08:18:26.579 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:18:28.709 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:18:29.997 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 2: user104
+2025-11-14 08:18:29.998 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user104
+2025-11-14 08:18:29.999 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:18:29.999 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user104 ✓
+2025-11-14 08:18:29.999 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-14 08:18:30.001 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateAndDeleteUser
+2025-11-14 08:18:30.004 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:18:30.005 [main] INFO  api.test.DDTests - ║  TEST START: User = user105 (ID: 105)
+2025-11-14 08:18:30.005 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-14 08:18:30.005 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user105
+2025-11-14 08:18:30.005 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:18:31.276 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-14 08:18:31.276 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user105
+2025-11-14 08:18:31.277 [main] INFO  api.endpoints.UserEndPoints - ==> POST https://petstore.swagger.io/v2/user
+2025-11-14 08:18:32.654 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-14 08:18:32.656 [main] INFO  api.test.DDTests - ✓ User created successfully: user105
+2025-11-14 08:18:32.656 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-14 08:18:32.656 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:18:33.926 [main] INFO  api.test.DDTests - ✓ User found on attempt 1: user105
+2025-11-14 08:18:33.926 [main] INFO  api.test.DDTests - ✓ User verification successful: user105
+2025-11-14 08:18:33.926 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-14 08:18:33.926 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:18:35.286 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 1: user105
+2025-11-14 08:18:35.286 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user105
+2025-11-14 08:18:35.286 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:18:35.287 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user105 ✓
+2025-11-14 08:18:35.287 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-14 08:18:35.290 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateAndDeleteUser
+2025-11-14 08:18:35.331 [main] INFO  api.utilities.ExtentReportManager - ========== Flushing Extent Report ==========
+2025-11-14 08:18:35.449 [main] INFO  api.utilities.ExtentReportManager - ✓ Extent Report generated successfully!
+2025-11-14 08:18:35.449 [main] INFO  api.utilities.ExtentReportManager - Report Location: /Users/irfankhan/eclipse-workspace/PetStoreAutomation/reports/Test-Report-2025.11.14.08.17.46.html
+2025-11-14 08:21:12.325 [main] INFO  api.utilities.ExtentReportManager - ========== Initializing Extent Report ==========
+2025-11-14 08:21:12.329 [main] INFO  api.utilities.ExtentReportManager - Report will be generated at: /Users/irfankhan/eclipse-workspace/PetStoreAutomation/reports/Test-Report-2025.11.14.08.21.12.html
+2025-11-14 08:21:12.390 [main] INFO  api.utilities.ExtentReportManager - Extent Report initialized successfully
+2025-11-14 08:21:12.473 [main] INFO  api.test.UserTests - ******* Creating user********
+2025-11-14 08:21:12.473 [main] INFO  api.endpoints.UserEndPoints - ==> POST https://petstore.swagger.io/v2/user
+2025-11-14 08:21:14.734 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateUser
+2025-11-14 08:21:14.736 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:21:16.159 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testGetUser
+2025-11-14 08:21:16.163 [main] INFO  api.endpoints.UserEndPoints - ==> PUT https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:21:17.588 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:21:19.094 [main] ERROR api.utilities.ExtentReportManager - ✗ Test FAILED: testUpdateUser
+2025-11-14 08:21:19.103 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:21:20.632 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testDeleteUser
+2025-11-14 08:21:20.654 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:21:20.654 [main] INFO  api.test.DDTests - ║  TEST START: User = user101 (ID: 101)
+2025-11-14 08:21:20.654 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-14 08:21:20.655 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user101
+2025-11-14 08:21:20.655 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:21:22.060 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-14 08:21:22.063 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user101
+2025-11-14 08:21:22.063 [main] INFO  api.endpoints.UserEndPoints - ==> POST https://petstore.swagger.io/v2/user
+2025-11-14 08:21:23.495 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-14 08:21:23.497 [main] INFO  api.test.DDTests - ✓ User created successfully: user101
+2025-11-14 08:21:23.498 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-14 08:21:23.498 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:21:25.781 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:21:28.019 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:21:30.346 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:21:31.764 [main] INFO  api.test.DDTests - ✓ User found on attempt 4: user101
+2025-11-14 08:21:31.765 [main] INFO  api.test.DDTests - ✓ User verification successful: user101
+2025-11-14 08:21:31.765 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-14 08:21:31.766 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:21:34.163 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:21:35.624 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 2: user101
+2025-11-14 08:21:35.626 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user101
+2025-11-14 08:21:35.626 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:21:35.627 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user101 ✓
+2025-11-14 08:21:35.627 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-14 08:21:35.629 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateAndDeleteUser
+2025-11-14 08:21:35.630 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:21:35.630 [main] INFO  api.test.DDTests - ║  TEST START: User = user102 (ID: 102)
+2025-11-14 08:21:35.631 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-14 08:21:35.631 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user102
+2025-11-14 08:21:35.631 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:21:37.091 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-14 08:21:37.092 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user102
+2025-11-14 08:21:37.092 [main] INFO  api.endpoints.UserEndPoints - ==> POST https://petstore.swagger.io/v2/user
+2025-11-14 08:21:38.582 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-14 08:21:38.586 [main] INFO  api.test.DDTests - ✓ User created successfully: user102
+2025-11-14 08:21:38.586 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-14 08:21:38.587 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:21:40.113 [main] INFO  api.test.DDTests - ✓ User found on attempt 1: user102
+2025-11-14 08:21:40.114 [main] INFO  api.test.DDTests - ✓ User verification successful: user102
+2025-11-14 08:21:40.115 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-14 08:21:40.115 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:21:41.516 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 1: user102
+2025-11-14 08:21:41.517 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user102
+2025-11-14 08:21:41.517 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:21:41.517 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user102 ✓
+2025-11-14 08:21:41.517 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-14 08:21:41.518 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateAndDeleteUser
+2025-11-14 08:21:41.519 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:21:41.519 [main] INFO  api.test.DDTests - ║  TEST START: User = user103 (ID: 103)
+2025-11-14 08:21:41.520 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-14 08:21:41.520 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user103
+2025-11-14 08:21:41.520 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:21:43.084 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-14 08:21:43.085 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user103
+2025-11-14 08:21:43.086 [main] INFO  api.endpoints.UserEndPoints - ==> POST https://petstore.swagger.io/v2/user
+2025-11-14 08:21:44.621 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-14 08:21:44.623 [main] INFO  api.test.DDTests - ✓ User created successfully: user103
+2025-11-14 08:21:44.623 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-14 08:21:44.623 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:21:46.156 [main] INFO  api.test.DDTests - ✓ User found on attempt 1: user103
+2025-11-14 08:21:46.157 [main] INFO  api.test.DDTests - ✓ User verification successful: user103
+2025-11-14 08:21:46.157 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-14 08:21:46.157 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:21:47.658 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 1: user103
+2025-11-14 08:21:47.659 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user103
+2025-11-14 08:21:47.659 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:21:47.659 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user103 ✓
+2025-11-14 08:21:47.659 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-14 08:21:47.661 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateAndDeleteUser
+2025-11-14 08:21:47.662 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:21:47.662 [main] INFO  api.test.DDTests - ║  TEST START: User = user104 (ID: 104)
+2025-11-14 08:21:47.662 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-14 08:21:47.662 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user104
+2025-11-14 08:21:47.662 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:21:49.229 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-14 08:21:49.231 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user104
+2025-11-14 08:21:49.232 [main] INFO  api.endpoints.UserEndPoints - ==> POST https://petstore.swagger.io/v2/user
+2025-11-14 08:21:50.765 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-14 08:21:50.766 [main] INFO  api.test.DDTests - ✓ User created successfully: user104
+2025-11-14 08:21:50.766 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-14 08:21:50.767 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:21:53.000 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:21:54.556 [main] INFO  api.test.DDTests - ✓ User found on attempt 2: user104
+2025-11-14 08:21:54.558 [main] INFO  api.test.DDTests - ✓ User verification successful: user104
+2025-11-14 08:21:54.559 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-14 08:21:54.559 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:21:56.090 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 1: user104
+2025-11-14 08:21:56.091 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user104
+2025-11-14 08:21:56.092 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:21:56.092 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user104 ✓
+2025-11-14 08:21:56.092 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-14 08:21:56.097 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateAndDeleteUser
+2025-11-14 08:21:56.101 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:21:56.101 [main] INFO  api.test.DDTests - ║  TEST START: User = user105 (ID: 105)
+2025-11-14 08:21:56.107 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-14 08:21:56.107 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user105
+2025-11-14 08:21:56.107 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:21:57.560 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-14 08:21:57.562 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user105
+2025-11-14 08:21:57.562 [main] INFO  api.endpoints.UserEndPoints - ==> POST https://petstore.swagger.io/v2/user
+2025-11-14 08:21:58.988 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-14 08:21:58.990 [main] INFO  api.test.DDTests - ✓ User created successfully: user105
+2025-11-14 08:21:58.990 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-14 08:21:58.990 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:22:00.427 [main] INFO  api.test.DDTests - ✓ User found on attempt 1: user105
+2025-11-14 08:22:00.428 [main] INFO  api.test.DDTests - ✓ User verification successful: user105
+2025-11-14 08:22:00.428 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-14 08:22:00.429 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:22:02.832 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:22:04.386 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 2: user105
+2025-11-14 08:22:04.387 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user105
+2025-11-14 08:22:04.388 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:22:04.388 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user105 ✓
+2025-11-14 08:22:04.388 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-14 08:22:04.390 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateAndDeleteUser
+2025-11-14 08:22:04.430 [main] INFO  api.utilities.ExtentReportManager - ========== Flushing Extent Report ==========
+2025-11-14 08:22:04.541 [main] INFO  api.utilities.ExtentReportManager - ✓ Extent Report generated successfully!
+2025-11-14 08:22:04.541 [main] INFO  api.utilities.ExtentReportManager - Report Location: /Users/irfankhan/eclipse-workspace/PetStoreAutomation/reports/Test-Report-2025.11.14.08.21.12.html
+2025-11-14 08:27:52.612 [main] INFO  api.utilities.ExtentReportManager - ========== Initializing Extent Report ==========
+2025-11-14 08:27:52.616 [main] INFO  api.utilities.ExtentReportManager - Report will be generated at: /Users/irfankhan/eclipse-workspace/PetStoreAutomation/reports/Test-Report-2025.11.14.08.27.52.html
+2025-11-14 08:27:52.675 [main] INFO  api.utilities.ExtentReportManager - Extent Report initialized successfully
+2025-11-14 08:27:52.757 [main] INFO  api.test.UserTests - ******* Creating user********
+2025-11-14 08:27:52.757 [main] INFO  api.endpoints.UserEndPoints - ==> POST https://petstore.swagger.io/v2/user
+2025-11-14 08:27:55.266 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateUser
+2025-11-14 08:27:55.269 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:27:56.748 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testGetUser
+2025-11-14 08:27:56.753 [main] INFO  api.endpoints.UserEndPoints - ==> PUT https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:27:58.383 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:27:59.920 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testUpdateUser
+2025-11-14 08:27:59.924 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:28:01.455 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testDeleteUser
+2025-11-14 08:28:01.476 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:28:01.476 [main] INFO  api.test.DDTests - ║  TEST START: User = user101 (ID: 101)
+2025-11-14 08:28:01.477 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-14 08:28:01.477 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user101
+2025-11-14 08:28:01.477 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:28:02.990 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-14 08:28:02.991 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user101
+2025-11-14 08:28:02.992 [main] INFO  api.endpoints.UserEndPoints - ==> POST https://petstore.swagger.io/v2/user
+2025-11-14 08:28:04.523 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-14 08:28:04.526 [main] INFO  api.test.DDTests - ✓ User created successfully: user101
+2025-11-14 08:28:04.528 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-14 08:28:04.528 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:28:06.058 [main] INFO  api.test.DDTests - ✓ User found on attempt 1: user101
+2025-11-14 08:28:06.059 [main] INFO  api.test.DDTests - ✓ User verification successful: user101
+2025-11-14 08:28:06.059 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-14 08:28:06.060 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:28:08.396 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:28:10.655 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:28:12.203 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 3: user101
+2025-11-14 08:28:12.204 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user101
+2025-11-14 08:28:12.205 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:28:12.205 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user101 ✓
+2025-11-14 08:28:12.205 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-14 08:28:12.207 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateAndDeleteUser
+2025-11-14 08:28:12.209 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:28:12.210 [main] INFO  api.test.DDTests - ║  TEST START: User = user102 (ID: 102)
+2025-11-14 08:28:12.210 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-14 08:28:12.212 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user102
+2025-11-14 08:28:12.212 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:28:13.636 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-14 08:28:13.637 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user102
+2025-11-14 08:28:13.637 [main] INFO  api.endpoints.UserEndPoints - ==> POST https://petstore.swagger.io/v2/user
+2025-11-14 08:28:15.071 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-14 08:28:15.073 [main] INFO  api.test.DDTests - ✓ User created successfully: user102
+2025-11-14 08:28:15.073 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-14 08:28:15.074 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:28:17.408 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:28:19.665 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:28:22.017 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:28:23.524 [main] INFO  api.test.DDTests - ✓ User found on attempt 4: user102
+2025-11-14 08:28:23.526 [main] INFO  api.test.DDTests - ✓ User verification successful: user102
+2025-11-14 08:28:23.526 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-14 08:28:23.526 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:28:25.909 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:28:28.261 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:28:29.713 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 3: user102
+2025-11-14 08:28:29.714 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user102
+2025-11-14 08:28:29.714 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:28:29.714 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user102 ✓
+2025-11-14 08:28:29.714 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-14 08:28:29.717 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateAndDeleteUser
+2025-11-14 08:28:29.719 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:28:29.719 [main] INFO  api.test.DDTests - ║  TEST START: User = user103 (ID: 103)
+2025-11-14 08:28:29.720 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-14 08:28:29.720 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user103
+2025-11-14 08:28:29.720 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:28:31.249 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-14 08:28:31.250 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user103
+2025-11-14 08:28:31.250 [main] INFO  api.endpoints.UserEndPoints - ==> POST https://petstore.swagger.io/v2/user
+2025-11-14 08:28:32.784 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-14 08:28:32.785 [main] INFO  api.test.DDTests - ✓ User created successfully: user103
+2025-11-14 08:28:32.785 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-14 08:28:32.786 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:28:35.125 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:28:36.675 [main] INFO  api.test.DDTests - ✓ User found on attempt 2: user103
+2025-11-14 08:28:36.676 [main] INFO  api.test.DDTests - ✓ User verification successful: user103
+2025-11-14 08:28:36.676 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-14 08:28:36.676 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:28:39.020 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:28:40.568 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 2: user103
+2025-11-14 08:28:40.569 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user103
+2025-11-14 08:28:40.569 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:28:40.569 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user103 ✓
+2025-11-14 08:28:40.570 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-14 08:28:40.571 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateAndDeleteUser
+2025-11-14 08:28:40.579 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:28:40.579 [main] INFO  api.test.DDTests - ║  TEST START: User = user104 (ID: 104)
+2025-11-14 08:28:40.579 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-14 08:28:40.579 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user104
+2025-11-14 08:28:40.580 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:28:42.000 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-14 08:28:42.001 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user104
+2025-11-14 08:28:42.002 [main] INFO  api.endpoints.UserEndPoints - ==> POST https://petstore.swagger.io/v2/user
+2025-11-14 08:28:43.446 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-14 08:28:43.447 [main] INFO  api.test.DDTests - ✓ User created successfully: user104
+2025-11-14 08:28:43.447 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-14 08:28:43.447 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:28:45.773 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:28:48.027 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:28:50.268 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:28:51.832 [main] INFO  api.test.DDTests - ✓ User found on attempt 4: user104
+2025-11-14 08:28:51.833 [main] INFO  api.test.DDTests - ✓ User verification successful: user104
+2025-11-14 08:28:51.833 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-14 08:28:51.833 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:28:53.367 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 1: user104
+2025-11-14 08:28:53.368 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user104
+2025-11-14 08:28:53.368 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:28:53.369 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user104 ✓
+2025-11-14 08:28:53.369 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-14 08:28:53.371 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateAndDeleteUser
+2025-11-14 08:28:53.373 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:28:53.373 [main] INFO  api.test.DDTests - ║  TEST START: User = user105 (ID: 105)
+2025-11-14 08:28:53.373 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-14 08:28:53.373 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user105
+2025-11-14 08:28:53.373 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:28:54.801 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-14 08:28:54.802 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user105
+2025-11-14 08:28:54.802 [main] INFO  api.endpoints.UserEndPoints - ==> POST https://petstore.swagger.io/v2/user
+2025-11-14 08:28:56.118 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-14 08:28:56.120 [main] INFO  api.test.DDTests - ✓ User created successfully: user105
+2025-11-14 08:28:56.121 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-14 08:28:56.121 [main] INFO  api.endpoints.UserEndPoints - ==> GET https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:28:57.565 [main] INFO  api.test.DDTests - ✓ User found on attempt 1: user105
+2025-11-14 08:28:57.566 [main] INFO  api.test.DDTests - ✓ User verification successful: user105
+2025-11-14 08:28:57.567 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-14 08:28:57.567 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:28:59.755 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:29:02.084 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:29:04.376 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE https://petstore.swagger.io/v2/user/{username}
+2025-11-14 08:29:05.859 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 4: user105
+2025-11-14 08:29:05.860 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user105
+2025-11-14 08:29:05.860 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-14 08:29:05.861 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user105 ✓
+2025-11-14 08:29:05.861 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-14 08:29:05.863 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateAndDeleteUser
+2025-11-14 08:29:05.914 [main] INFO  api.utilities.ExtentReportManager - ========== Flushing Extent Report ==========
+2025-11-14 08:29:06.028 [main] INFO  api.utilities.ExtentReportManager - ✓ Extent Report generated successfully!
+2025-11-14 08:29:06.028 [main] INFO  api.utilities.ExtentReportManager - Report Location: /Users/irfankhan/eclipse-workspace/PetStoreAutomation/reports/Test-Report-2025.11.14.08.27.52.html

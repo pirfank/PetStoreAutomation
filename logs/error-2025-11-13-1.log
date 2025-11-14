@@ -1,0 +1,13 @@
+2025-11-13 10:51:30.334 [main] ERROR api.utilities.ExtentReportManager - ✗ Test FAILED: testUpdateUser
+2025-11-13 10:57:49.121 [main] ERROR api.utilities.ExtentReportManager - ✗ Test FAILED: testGetUser
+2025-11-13 11:02:28.572 [main] ERROR api.utilities.ExtentReportManager - ✗ Test FAILED: testGetUser
+2025-11-13 11:02:31.588 [main] ERROR api.utilities.ExtentReportManager - ✗ Test FAILED: testUpdateUser
+2025-11-13 11:06:45.769 [main] ERROR api.utilities.ExtentReportManager - ✗ Test FAILED: testGetUser
+2025-11-13 11:06:48.828 [main] ERROR api.utilities.ExtentReportManager - ✗ Test FAILED: testUpdateUser
+2025-11-13 11:06:50.402 [main] ERROR api.utilities.ExtentReportManager - ✗ Test FAILED: testDeleteUser
+2025-11-13 11:07:32.056 [main] ERROR api.test.DDTests - ✗ Failed to get user after 5 attempts: user105
+2025-11-13 11:07:32.062 [main] ERROR api.utilities.ExtentReportManager - ✗ Test FAILED: testCreateAndDeleteUser
+2025-11-13 11:13:53.713 [main] ERROR api.test.DDTests - ✗ Failed to delete user after 5 attempts: user102
+2025-11-13 11:13:53.730 [main] ERROR api.utilities.ExtentReportManager - ✗ Test FAILED: testCreateAndDeleteUser
+2025-11-13 11:14:36.004 [main] ERROR api.test.DDTests - ✗ Failed to delete user after 5 attempts: user105
+2025-11-13 11:14:36.010 [main] ERROR api.utilities.ExtentReportManager - ✗ Test FAILED: testCreateAndDeleteUser

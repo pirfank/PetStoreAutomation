@@ -1,0 +1,640 @@
+2025-11-11 10:11:34.398 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:11:34.398 [main] INFO  api.test.DDTests - ║  TEST START: User = user101 (ID: 101)
+2025-11-11 10:11:34.398 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-11 10:11:34.398 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user101
+2025-11-11 10:11:34.399 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user101
+2025-11-11 10:11:34.633 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:11:34.633 [main] INFO  api.test.DDTests - ║  TEST START: User = user102 (ID: 102)
+2025-11-11 10:11:34.633 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-11 10:11:34.634 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user102
+2025-11-11 10:11:34.634 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user102
+2025-11-11 10:11:34.635 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:11:34.635 [main] INFO  api.test.DDTests - ║  TEST START: User = user103 (ID: 103)
+2025-11-11 10:11:34.635 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-11 10:11:34.635 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user103
+2025-11-11 10:11:34.635 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user103
+2025-11-11 10:11:34.637 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:11:34.637 [main] INFO  api.test.DDTests - ║  TEST START: User = user104 (ID: 104)
+2025-11-11 10:11:34.637 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-11 10:11:34.637 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user104
+2025-11-11 10:11:34.637 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user104
+2025-11-11 10:11:34.638 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:11:34.638 [main] INFO  api.test.DDTests - ║  TEST START: User = user105 (ID: 105)
+2025-11-11 10:11:34.638 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-11 10:11:34.638 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user105
+2025-11-11 10:11:34.639 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user105
+2025-11-11 10:14:21.006 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:14:21.006 [main] INFO  api.test.DDTests - ║  TEST START: User = user101 (ID: 101)
+2025-11-11 10:14:21.006 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-11 10:14:21.006 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user101
+2025-11-11 10:14:21.006 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user101
+2025-11-11 10:14:23.381 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:14:23.385 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-11 10:14:23.386 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user101
+2025-11-11 10:14:23.386 [main] INFO  api.endpoints.UserEndPoints - ==> POST Request: Creating user with username: user101
+2025-11-11 10:14:24.789 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:14:24.795 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-11 10:14:24.798 [main] INFO  api.test.DDTests - ✓ User created successfully: user101
+2025-11-11 10:14:24.799 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-11 10:14:24.799 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user101
+2025-11-11 10:14:26.293 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:14:27.099 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user101
+2025-11-11 10:14:28.687 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:14:29.491 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user101
+2025-11-11 10:14:31.041 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:14:31.043 [main] INFO  api.test.DDTests - ✓ User found on attempt 3: user101
+2025-11-11 10:14:31.044 [main] INFO  api.test.DDTests - ✓ User verification successful: user101
+2025-11-11 10:14:31.044 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-11 10:14:31.044 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user101
+2025-11-11 10:14:32.575 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:14:33.381 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user101
+2025-11-11 10:14:34.931 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:14:34.933 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 2: user101
+2025-11-11 10:14:34.934 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user101
+2025-11-11 10:14:34.934 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:14:34.934 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user101 ✓
+2025-11-11 10:14:34.934 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-11 10:14:34.941 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:14:34.942 [main] INFO  api.test.DDTests - ║  TEST START: User = user102 (ID: 102)
+2025-11-11 10:14:34.942 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-11 10:14:34.942 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user102
+2025-11-11 10:14:34.942 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user102
+2025-11-11 10:14:36.316 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:14:36.317 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-11 10:14:36.317 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user102
+2025-11-11 10:14:36.318 [main] INFO  api.endpoints.UserEndPoints - ==> POST Request: Creating user with username: user102
+2025-11-11 10:14:37.799 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:14:37.801 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-11 10:14:37.801 [main] INFO  api.test.DDTests - ✓ User created successfully: user102
+2025-11-11 10:14:37.802 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-11 10:14:37.802 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user102
+2025-11-11 10:14:39.335 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:14:39.336 [main] INFO  api.test.DDTests - ✓ User found on attempt 1: user102
+2025-11-11 10:14:39.337 [main] INFO  api.test.DDTests - ✓ User verification successful: user102
+2025-11-11 10:14:39.337 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-11 10:14:39.337 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user102
+2025-11-11 10:14:40.871 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:14:40.873 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 1: user102
+2025-11-11 10:14:40.873 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user102
+2025-11-11 10:14:40.873 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:14:40.873 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user102 ✓
+2025-11-11 10:14:40.873 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-11 10:14:40.878 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:14:40.878 [main] INFO  api.test.DDTests - ║  TEST START: User = user103 (ID: 103)
+2025-11-11 10:14:40.878 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-11 10:14:40.878 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user103
+2025-11-11 10:14:40.879 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user103
+2025-11-11 10:14:42.407 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:14:42.408 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-11 10:14:42.408 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user103
+2025-11-11 10:14:42.408 [main] INFO  api.endpoints.UserEndPoints - ==> POST Request: Creating user with username: user103
+2025-11-11 10:14:43.944 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:14:43.945 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-11 10:14:43.946 [main] INFO  api.test.DDTests - ✓ User created successfully: user103
+2025-11-11 10:14:43.946 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-11 10:14:43.946 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user103
+2025-11-11 10:14:45.426 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:14:46.232 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user103
+2025-11-11 10:14:47.834 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:14:48.640 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user103
+2025-11-11 10:14:50.189 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:14:50.190 [main] INFO  api.test.DDTests - ✓ User found on attempt 3: user103
+2025-11-11 10:14:50.190 [main] INFO  api.test.DDTests - ✓ User verification successful: user103
+2025-11-11 10:14:50.191 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-11 10:14:50.191 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user103
+2025-11-11 10:14:52.751 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:14:53.553 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user103
+2025-11-11 10:14:55.516 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:14:55.518 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 2: user103
+2025-11-11 10:14:55.519 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user103
+2025-11-11 10:14:55.519 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:14:55.519 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user103 ✓
+2025-11-11 10:14:55.519 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-11 10:14:55.523 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:14:55.524 [main] INFO  api.test.DDTests - ║  TEST START: User = user104 (ID: 104)
+2025-11-11 10:14:55.524 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-11 10:14:55.527 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user104
+2025-11-11 10:14:55.528 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user104
+2025-11-11 10:14:57.050 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:14:57.051 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-11 10:14:57.051 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user104
+2025-11-11 10:14:57.051 [main] INFO  api.endpoints.UserEndPoints - ==> POST Request: Creating user with username: user104
+2025-11-11 10:14:58.585 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:14:58.587 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-11 10:14:58.588 [main] INFO  api.test.DDTests - ✓ User created successfully: user104
+2025-11-11 10:14:58.588 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-11 10:14:58.588 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user104
+2025-11-11 10:15:00.121 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:15:00.122 [main] INFO  api.test.DDTests - ✓ User found on attempt 1: user104
+2025-11-11 10:15:00.122 [main] INFO  api.test.DDTests - ✓ User verification successful: user104
+2025-11-11 10:15:00.122 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-11 10:15:00.122 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user104
+2025-11-11 10:15:01.658 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:15:01.659 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 1: user104
+2025-11-11 10:15:01.659 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user104
+2025-11-11 10:15:01.659 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:15:01.659 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user104 ✓
+2025-11-11 10:15:01.659 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-11 10:15:01.662 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:15:01.662 [main] INFO  api.test.DDTests - ║  TEST START: User = user105 (ID: 105)
+2025-11-11 10:15:01.663 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-11 10:15:01.663 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user105
+2025-11-11 10:15:01.663 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user105
+2025-11-11 10:15:03.194 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:15:03.194 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-11 10:15:03.195 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user105
+2025-11-11 10:15:03.195 [main] INFO  api.endpoints.UserEndPoints - ==> POST Request: Creating user with username: user105
+2025-11-11 10:15:04.697 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:15:04.698 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-11 10:15:04.698 [main] INFO  api.test.DDTests - ✓ User created successfully: user105
+2025-11-11 10:15:04.698 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-11 10:15:04.698 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user105
+2025-11-11 10:15:06.265 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:15:07.070 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user105
+2025-11-11 10:15:08.621 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:15:09.428 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user105
+2025-11-11 10:15:10.983 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:15:11.786 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user105
+2025-11-11 10:15:13.332 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:15:14.139 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user105
+2025-11-11 10:15:15.686 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:15:16.490 [main] ERROR api.test.DDTests - ✗ Failed to get user after 5 attempts: user105
+2025-11-11 10:18:21.533 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:18:21.533 [main] INFO  api.test.DDTests - ║  TEST START: User = user101 (ID: 101)
+2025-11-11 10:18:21.533 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-11 10:18:21.534 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user101
+2025-11-11 10:18:21.534 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user101
+2025-11-11 10:18:23.615 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:18:23.618 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-11 10:18:23.618 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user101
+2025-11-11 10:18:23.618 [main] INFO  api.endpoints.UserEndPoints - ==> POST Request: Creating user with username: user101
+2025-11-11 10:18:25.234 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:18:25.257 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-11 10:18:25.276 [main] INFO  api.test.DDTests - ✓ User created successfully: user101
+2025-11-11 10:18:25.276 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-11 10:18:25.276 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user101
+2025-11-11 10:18:26.709 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:18:26.710 [main] INFO  api.test.DDTests - ✓ User found on attempt 1: user101
+2025-11-11 10:18:26.711 [main] INFO  api.test.DDTests - ✓ User verification successful: user101
+2025-11-11 10:18:26.712 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-11 10:18:26.712 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user101
+2025-11-11 10:18:28.099 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:18:28.906 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user101
+2025-11-11 10:18:30.250 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:18:30.253 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 2: user101
+2025-11-11 10:18:30.254 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user101
+2025-11-11 10:18:30.254 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:18:30.254 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user101 ✓
+2025-11-11 10:18:30.254 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-11 10:18:30.278 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:18:30.278 [main] INFO  api.test.DDTests - ║  TEST START: User = user102 (ID: 102)
+2025-11-11 10:18:30.278 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-11 10:18:30.278 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user102
+2025-11-11 10:18:30.279 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user102
+2025-11-11 10:18:31.750 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:18:31.751 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-11 10:18:31.751 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user102
+2025-11-11 10:18:31.751 [main] INFO  api.endpoints.UserEndPoints - ==> POST Request: Creating user with username: user102
+2025-11-11 10:18:33.218 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:18:33.219 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-11 10:18:33.219 [main] INFO  api.test.DDTests - ✓ User created successfully: user102
+2025-11-11 10:18:33.219 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-11 10:18:33.220 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user102
+2025-11-11 10:18:34.756 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:18:35.563 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user102
+2025-11-11 10:18:37.111 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:18:37.112 [main] INFO  api.test.DDTests - ✓ User found on attempt 2: user102
+2025-11-11 10:18:37.113 [main] INFO  api.test.DDTests - ✓ User verification successful: user102
+2025-11-11 10:18:37.113 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-11 10:18:37.113 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user102
+2025-11-11 10:18:38.570 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:18:39.377 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user102
+2025-11-11 10:18:41.001 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:18:41.003 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 2: user102
+2025-11-11 10:18:41.004 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user102
+2025-11-11 10:18:41.005 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:18:41.006 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user102 ✓
+2025-11-11 10:18:41.006 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-11 10:18:41.019 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:18:41.019 [main] INFO  api.test.DDTests - ║  TEST START: User = user103 (ID: 103)
+2025-11-11 10:18:41.019 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-11 10:18:41.020 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user103
+2025-11-11 10:18:41.020 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user103
+2025-11-11 10:18:42.538 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:18:42.539 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-11 10:18:42.539 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user103
+2025-11-11 10:18:42.539 [main] INFO  api.endpoints.UserEndPoints - ==> POST Request: Creating user with username: user103
+2025-11-11 10:18:44.073 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:18:44.075 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-11 10:18:44.075 [main] INFO  api.test.DDTests - ✓ User created successfully: user103
+2025-11-11 10:18:44.076 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-11 10:18:44.076 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user103
+2025-11-11 10:18:45.567 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:18:46.371 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user103
+2025-11-11 10:18:47.964 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:18:48.769 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user103
+2025-11-11 10:18:50.386 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:18:51.193 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user103
+2025-11-11 10:18:52.779 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:18:53.582 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user103
+2025-11-11 10:18:55.133 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:18:55.939 [main] ERROR api.test.DDTests - ✗ Failed to get user after 5 attempts: user103
+2025-11-11 10:18:55.962 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:18:55.963 [main] INFO  api.test.DDTests - ║  TEST START: User = user104 (ID: 104)
+2025-11-11 10:18:55.963 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-11 10:18:55.963 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user104
+2025-11-11 10:18:55.964 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user104
+2025-11-11 10:18:57.446 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:18:57.447 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-11 10:18:57.448 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user104
+2025-11-11 10:18:57.448 [main] INFO  api.endpoints.UserEndPoints - ==> POST Request: Creating user with username: user104
+2025-11-11 10:18:58.820 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:18:58.821 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-11 10:18:58.821 [main] INFO  api.test.DDTests - ✓ User created successfully: user104
+2025-11-11 10:18:58.822 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-11 10:18:58.822 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user104
+2025-11-11 10:19:00.303 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:19:01.108 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user104
+2025-11-11 10:19:02.576 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:19:03.382 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user104
+2025-11-11 10:19:04.963 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:19:05.769 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user104
+2025-11-11 10:19:07.318 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:19:07.319 [main] INFO  api.test.DDTests - ✓ User found on attempt 4: user104
+2025-11-11 10:19:07.320 [main] INFO  api.test.DDTests - ✓ User verification successful: user104
+2025-11-11 10:19:07.320 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-11 10:19:07.320 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user104
+2025-11-11 10:19:08.856 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:19:08.858 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 1: user104
+2025-11-11 10:19:08.859 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user104
+2025-11-11 10:19:08.859 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:19:08.860 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user104 ✓
+2025-11-11 10:19:08.860 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-11 10:19:08.874 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:19:08.875 [main] INFO  api.test.DDTests - ║  TEST START: User = user105 (ID: 105)
+2025-11-11 10:19:08.875 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-11 10:19:08.875 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user105
+2025-11-11 10:19:08.875 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user105
+2025-11-11 10:19:10.367 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:19:10.368 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-11 10:19:10.369 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user105
+2025-11-11 10:19:10.369 [main] INFO  api.endpoints.UserEndPoints - ==> POST Request: Creating user with username: user105
+2025-11-11 10:19:11.927 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:19:11.928 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-11 10:19:11.929 [main] INFO  api.test.DDTests - ✓ User created successfully: user105
+2025-11-11 10:19:11.929 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-11 10:19:11.929 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user105
+2025-11-11 10:19:13.462 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:19:14.269 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user105
+2025-11-11 10:19:15.816 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:19:16.620 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user105
+2025-11-11 10:19:18.081 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:19:18.888 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user105
+2025-11-11 10:19:20.326 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:19:20.328 [main] INFO  api.test.DDTests - ✓ User found on attempt 4: user105
+2025-11-11 10:19:20.328 [main] INFO  api.test.DDTests - ✓ User verification successful: user105
+2025-11-11 10:19:20.328 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-11 10:19:20.328 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user105
+2025-11-11 10:19:21.858 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:19:21.860 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 1: user105
+2025-11-11 10:19:21.860 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user105
+2025-11-11 10:19:21.860 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:19:21.860 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user105 ✓
+2025-11-11 10:19:21.860 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-11 10:24:00.243 [main] INFO  api.utilities.ExtentReportManager - ========== Initializing Extent Report ==========
+2025-11-11 10:24:00.244 [main] INFO  api.utilities.ExtentReportManager - Report will be generated at: /Users/irfankhan/eclipse-workspace/PetStoreAutomation/reports/Test-Report-2025.11.11.10.24.00.html
+2025-11-11 10:24:00.344 [main] INFO  api.utilities.ExtentReportManager - Extent Report initialized successfully
+2025-11-11 10:24:00.371 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:24:00.371 [main] INFO  api.test.DDTests - ║  TEST START: User = user101 (ID: 101)
+2025-11-11 10:24:00.371 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-11 10:24:00.371 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user101
+2025-11-11 10:24:00.372 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user101
+2025-11-11 10:24:02.688 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:24:02.693 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-11 10:24:02.693 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user101
+2025-11-11 10:24:02.693 [main] INFO  api.endpoints.UserEndPoints - ==> POST Request: Creating user with username: user101
+2025-11-11 10:24:04.303 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:24:04.313 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-11 10:24:04.318 [main] INFO  api.test.DDTests - ✓ User created successfully: user101
+2025-11-11 10:24:04.319 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-11 10:24:04.319 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user101
+2025-11-11 10:24:05.833 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:24:05.835 [main] INFO  api.test.DDTests - ✓ User found on attempt 1: user101
+2025-11-11 10:24:05.835 [main] INFO  api.test.DDTests - ✓ User verification successful: user101
+2025-11-11 10:24:05.836 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-11 10:24:05.836 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user101
+2025-11-11 10:24:07.241 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:24:08.048 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user101
+2025-11-11 10:24:09.519 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:24:09.521 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 2: user101
+2025-11-11 10:24:09.522 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user101
+2025-11-11 10:24:09.522 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:24:09.522 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user101 ✓
+2025-11-11 10:24:09.523 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-11 10:24:09.541 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateAndDeleteUser
+2025-11-11 10:24:09.543 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:24:09.543 [main] INFO  api.test.DDTests - ║  TEST START: User = user102 (ID: 102)
+2025-11-11 10:24:09.543 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-11 10:24:09.544 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user102
+2025-11-11 10:24:09.544 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user102
+2025-11-11 10:24:11.054 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:24:11.055 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-11 10:24:11.056 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user102
+2025-11-11 10:24:11.056 [main] INFO  api.endpoints.UserEndPoints - ==> POST Request: Creating user with username: user102
+2025-11-11 10:24:12.590 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:24:12.592 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-11 10:24:12.592 [main] INFO  api.test.DDTests - ✓ User created successfully: user102
+2025-11-11 10:24:12.592 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-11 10:24:12.592 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user102
+2025-11-11 10:24:14.126 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:24:14.929 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user102
+2025-11-11 10:24:16.379 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:24:16.381 [main] INFO  api.test.DDTests - ✓ User found on attempt 2: user102
+2025-11-11 10:24:16.382 [main] INFO  api.test.DDTests - ✓ User verification successful: user102
+2025-11-11 10:24:16.382 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-11 10:24:16.382 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user102
+2025-11-11 10:24:17.828 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:24:17.830 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 1: user102
+2025-11-11 10:24:17.830 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user102
+2025-11-11 10:24:17.830 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:24:17.830 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user102 ✓
+2025-11-11 10:24:17.832 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-11 10:24:17.841 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateAndDeleteUser
+2025-11-11 10:24:17.842 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:24:17.842 [main] INFO  api.test.DDTests - ║  TEST START: User = user103 (ID: 103)
+2025-11-11 10:24:17.842 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-11 10:24:17.842 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user103
+2025-11-11 10:24:17.842 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user103
+2025-11-11 10:24:19.350 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:24:19.352 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-11 10:24:19.352 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user103
+2025-11-11 10:24:19.352 [main] INFO  api.endpoints.UserEndPoints - ==> POST Request: Creating user with username: user103
+2025-11-11 10:24:20.782 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:24:20.783 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-11 10:24:20.783 [main] INFO  api.test.DDTests - ✓ User created successfully: user103
+2025-11-11 10:24:20.783 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-11 10:24:20.783 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user103
+2025-11-11 10:24:22.319 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:24:22.320 [main] INFO  api.test.DDTests - ✓ User found on attempt 1: user103
+2025-11-11 10:24:22.321 [main] INFO  api.test.DDTests - ✓ User verification successful: user103
+2025-11-11 10:24:22.321 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-11 10:24:22.321 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user103
+2025-11-11 10:24:23.853 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:24:23.855 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 1: user103
+2025-11-11 10:24:23.855 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user103
+2025-11-11 10:24:23.855 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:24:23.855 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user103 ✓
+2025-11-11 10:24:23.855 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-11 10:24:23.858 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateAndDeleteUser
+2025-11-11 10:24:23.860 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:24:23.861 [main] INFO  api.test.DDTests - ║  TEST START: User = user104 (ID: 104)
+2025-11-11 10:24:23.861 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-11 10:24:23.862 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user104
+2025-11-11 10:24:23.862 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user104
+2025-11-11 10:24:25.350 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:24:25.351 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-11 10:24:25.351 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user104
+2025-11-11 10:24:25.351 [main] INFO  api.endpoints.UserEndPoints - ==> POST Request: Creating user with username: user104
+2025-11-11 10:24:26.824 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:24:26.827 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-11 10:24:26.827 [main] INFO  api.test.DDTests - ✓ User created successfully: user104
+2025-11-11 10:24:26.827 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-11 10:24:26.828 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user104
+2025-11-11 10:24:28.363 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:24:28.364 [main] INFO  api.test.DDTests - ✓ User found on attempt 1: user104
+2025-11-11 10:24:28.364 [main] INFO  api.test.DDTests - ✓ User verification successful: user104
+2025-11-11 10:24:28.365 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-11 10:24:28.365 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user104
+2025-11-11 10:24:29.896 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:24:30.702 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user104
+2025-11-11 10:24:32.251 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:24:33.057 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user104
+2025-11-11 10:24:34.606 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:24:34.607 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 3: user104
+2025-11-11 10:24:34.607 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user104
+2025-11-11 10:24:34.607 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:24:34.608 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user104 ✓
+2025-11-11 10:24:34.608 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-11 10:24:34.610 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateAndDeleteUser
+2025-11-11 10:24:34.612 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:24:34.613 [main] INFO  api.test.DDTests - ║  TEST START: User = user105 (ID: 105)
+2025-11-11 10:24:34.613 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-11 10:24:34.613 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user105
+2025-11-11 10:24:34.613 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user105
+2025-11-11 10:24:36.142 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:24:36.143 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-11 10:24:36.143 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user105
+2025-11-11 10:24:36.143 [main] INFO  api.endpoints.UserEndPoints - ==> POST Request: Creating user with username: user105
+2025-11-11 10:24:37.678 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:24:37.679 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-11 10:24:37.680 [main] INFO  api.test.DDTests - ✓ User created successfully: user105
+2025-11-11 10:24:37.680 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-11 10:24:37.680 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user105
+2025-11-11 10:24:39.213 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:24:39.215 [main] INFO  api.test.DDTests - ✓ User found on attempt 1: user105
+2025-11-11 10:24:39.215 [main] INFO  api.test.DDTests - ✓ User verification successful: user105
+2025-11-11 10:24:39.215 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-11 10:24:39.215 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user105
+2025-11-11 10:24:40.751 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:24:41.557 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user105
+2025-11-11 10:24:43.106 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:24:43.907 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user105
+2025-11-11 10:24:45.358 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:24:45.359 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 3: user105
+2025-11-11 10:24:45.359 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user105
+2025-11-11 10:24:45.359 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:24:45.359 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user105 ✓
+2025-11-11 10:24:45.359 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-11 10:24:45.362 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateAndDeleteUser
+2025-11-11 10:24:45.400 [main] INFO  api.utilities.ExtentReportManager - ========== Flushing Extent Report ==========
+2025-11-11 10:24:45.501 [main] INFO  api.utilities.ExtentReportManager - ✓ Extent Report generated successfully!
+2025-11-11 10:24:45.502 [main] INFO  api.utilities.ExtentReportManager - Report Location: /Users/irfankhan/eclipse-workspace/PetStoreAutomation/reports/Test-Report-2025.11.11.10.24.00.html
+2025-11-11 10:34:21.165 [main] INFO  api.utilities.ExtentReportManager - ========== Initializing Extent Report ==========
+2025-11-11 10:34:21.166 [main] INFO  api.utilities.ExtentReportManager - Report will be generated at: /Users/irfankhan/eclipse-workspace/PetStoreAutomation/reports/Test-Report-2025.11.11.10.34.21.html
+2025-11-11 10:34:21.228 [main] INFO  api.utilities.ExtentReportManager - Extent Report initialized successfully
+2025-11-11 10:34:21.314 [main] INFO  api.test.UserTests - ******* Creating user********
+2025-11-11 10:34:21.314 [main] INFO  api.endpoints.UserEndPoints - ==> POST Request: Creating user with username: user_shawn.berge
+2025-11-11 10:34:23.565 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:34:23.589 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateUser
+2025-11-11 10:34:23.592 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user_shawn.berge
+2025-11-11 10:34:25.063 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:34:25.080 [main] ERROR api.utilities.ExtentReportManager - ✗ Test FAILED: testGetUser
+2025-11-11 10:34:25.086 [main] INFO  api.endpoints.UserEndPoints - ==> PUT Request: Updating user with username: user_shawn.berge
+2025-11-11 10:34:26.590 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:34:26.593 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user_shawn.berge
+2025-11-11 10:34:28.126 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:34:28.131 [main] ERROR api.utilities.ExtentReportManager - ✗ Test FAILED: testUpdateUser
+2025-11-11 10:34:28.135 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user_shawn.berge
+2025-11-11 10:34:29.667 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:34:29.674 [main] ERROR api.utilities.ExtentReportManager - ✗ Test FAILED: testDeleteUser
+2025-11-11 10:34:29.681 [main] INFO  api.utilities.ExtentReportManager - ========== Flushing Extent Report ==========
+2025-11-11 10:34:29.810 [main] INFO  api.utilities.ExtentReportManager - ✓ Extent Report generated successfully!
+2025-11-11 10:34:29.810 [main] INFO  api.utilities.ExtentReportManager - Report Location: /Users/irfankhan/eclipse-workspace/PetStoreAutomation/reports/Test-Report-2025.11.11.10.34.21.html
+2025-11-11 10:34:29.829 [main] INFO  api.utilities.ExtentReportManager - ========== Initializing Extent Report ==========
+2025-11-11 10:34:29.829 [main] INFO  api.utilities.ExtentReportManager - Report will be generated at: /Users/irfankhan/eclipse-workspace/PetStoreAutomation/reports/Test-Report-2025.11.11.10.34.29.html
+2025-11-11 10:34:29.829 [main] INFO  api.utilities.ExtentReportManager - Extent Report initialized successfully
+2025-11-11 10:34:29.842 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:34:29.842 [main] INFO  api.test.DDTests - ║  TEST START: User = user101 (ID: 101)
+2025-11-11 10:34:29.842 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-11 10:34:29.842 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user101
+2025-11-11 10:34:29.842 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user101
+2025-11-11 10:34:31.404 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:34:31.405 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-11 10:34:31.405 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user101
+2025-11-11 10:34:31.406 [main] INFO  api.endpoints.UserEndPoints - ==> POST Request: Creating user with username: user101
+2025-11-11 10:34:32.939 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:34:32.940 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-11 10:34:32.941 [main] INFO  api.test.DDTests - ✓ User created successfully: user101
+2025-11-11 10:34:32.941 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-11 10:34:32.941 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user101
+2025-11-11 10:34:34.452 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:34:35.260 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user101
+2025-11-11 10:34:36.830 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:34:36.831 [main] INFO  api.test.DDTests - ✓ User found on attempt 2: user101
+2025-11-11 10:34:36.832 [main] INFO  api.test.DDTests - ✓ User verification successful: user101
+2025-11-11 10:34:36.832 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-11 10:34:36.832 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user101
+2025-11-11 10:34:38.364 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:34:38.366 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 1: user101
+2025-11-11 10:34:38.367 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user101
+2025-11-11 10:34:38.367 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:34:38.367 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user101 ✓
+2025-11-11 10:34:38.368 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-11 10:34:38.371 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateAndDeleteUser
+2025-11-11 10:34:38.374 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:34:38.375 [main] INFO  api.test.DDTests - ║  TEST START: User = user102 (ID: 102)
+2025-11-11 10:34:38.375 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-11 10:34:38.375 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user102
+2025-11-11 10:34:38.380 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user102
+2025-11-11 10:34:40.004 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:34:40.005 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-11 10:34:40.005 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user102
+2025-11-11 10:34:40.005 [main] INFO  api.endpoints.UserEndPoints - ==> POST Request: Creating user with username: user102
+2025-11-11 10:34:41.512 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:34:41.513 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-11 10:34:41.513 [main] INFO  api.test.DDTests - ✓ User created successfully: user102
+2025-11-11 10:34:41.513 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-11 10:34:41.513 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user102
+2025-11-11 10:34:43.078 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:34:43.881 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user102
+2025-11-11 10:34:45.428 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:34:46.232 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user102
+2025-11-11 10:34:47.788 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:34:47.790 [main] INFO  api.test.DDTests - ✓ User found on attempt 3: user102
+2025-11-11 10:34:47.790 [main] INFO  api.test.DDTests - ✓ User verification successful: user102
+2025-11-11 10:34:47.790 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-11 10:34:47.791 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user102
+2025-11-11 10:34:49.220 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:34:50.026 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user102
+2025-11-11 10:34:51.533 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:34:52.339 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user102
+2025-11-11 10:34:53.827 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:34:53.829 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 3: user102
+2025-11-11 10:34:53.829 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user102
+2025-11-11 10:34:53.829 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:34:53.829 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user102 ✓
+2025-11-11 10:34:53.829 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-11 10:34:53.840 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateAndDeleteUser
+2025-11-11 10:34:53.841 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:34:53.842 [main] INFO  api.test.DDTests - ║  TEST START: User = user103 (ID: 103)
+2025-11-11 10:34:53.842 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-11 10:34:53.842 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user103
+2025-11-11 10:34:53.842 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user103
+2025-11-11 10:34:55.261 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:34:55.262 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-11 10:34:55.262 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user103
+2025-11-11 10:34:55.262 [main] INFO  api.endpoints.UserEndPoints - ==> POST Request: Creating user with username: user103
+2025-11-11 10:34:56.798 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:34:56.800 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-11 10:34:56.800 [main] INFO  api.test.DDTests - ✓ User created successfully: user103
+2025-11-11 10:34:56.800 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-11 10:34:56.801 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user103
+2025-11-11 10:34:58.142 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:34:58.948 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user103
+2025-11-11 10:35:00.483 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:35:00.484 [main] INFO  api.test.DDTests - ✓ User found on attempt 2: user103
+2025-11-11 10:35:00.485 [main] INFO  api.test.DDTests - ✓ User verification successful: user103
+2025-11-11 10:35:00.485 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-11 10:35:00.485 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user103
+2025-11-11 10:35:01.878 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:35:01.880 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 1: user103
+2025-11-11 10:35:01.880 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user103
+2025-11-11 10:35:01.880 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:35:01.881 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user103 ✓
+2025-11-11 10:35:01.881 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-11 10:35:01.885 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateAndDeleteUser
+2025-11-11 10:35:01.888 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:35:01.888 [main] INFO  api.test.DDTests - ║  TEST START: User = user104 (ID: 104)
+2025-11-11 10:35:01.888 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-11 10:35:01.890 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user104
+2025-11-11 10:35:01.890 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user104
+2025-11-11 10:35:03.427 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:35:03.429 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-11 10:35:03.429 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user104
+2025-11-11 10:35:03.429 [main] INFO  api.endpoints.UserEndPoints - ==> POST Request: Creating user with username: user104
+2025-11-11 10:35:04.987 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:35:04.988 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-11 10:35:04.988 [main] INFO  api.test.DDTests - ✓ User created successfully: user104
+2025-11-11 10:35:04.989 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-11 10:35:04.989 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user104
+2025-11-11 10:35:06.422 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:35:06.424 [main] INFO  api.test.DDTests - ✓ User found on attempt 1: user104
+2025-11-11 10:35:06.424 [main] INFO  api.test.DDTests - ✓ User verification successful: user104
+2025-11-11 10:35:06.424 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-11 10:35:06.424 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user104
+2025-11-11 10:35:07.958 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:35:07.959 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 1: user104
+2025-11-11 10:35:07.959 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user104
+2025-11-11 10:35:07.960 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:35:07.960 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user104 ✓
+2025-11-11 10:35:07.960 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-11 10:35:07.962 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateAndDeleteUser
+2025-11-11 10:35:07.964 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:35:07.964 [main] INFO  api.test.DDTests - ║  TEST START: User = user105 (ID: 105)
+2025-11-11 10:35:07.964 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+2025-11-11 10:35:07.964 [main] INFO  api.test.DDTests - → Step 1: Pre-cleanup - Deleting user if exists: user105
+2025-11-11 10:35:07.964 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user105
+2025-11-11 10:35:09.492 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:35:09.493 [main] INFO  api.test.DDTests - → Step 2: Creating User object
+2025-11-11 10:35:09.493 [main] INFO  api.test.DDTests - → Step 3: Creating user via API: user105
+2025-11-11 10:35:09.493 [main] INFO  api.endpoints.UserEndPoints - ==> POST Request: Creating user with username: user105
+2025-11-11 10:35:11.029 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:35:11.029 [main] INFO  api.test.DDTests - Create Response Status: 200
+2025-11-11 10:35:11.030 [main] INFO  api.test.DDTests - ✓ User created successfully: user105
+2025-11-11 10:35:11.030 [main] INFO  api.test.DDTests - → Step 4: Verifying user creation (with retry logic)
+2025-11-11 10:35:11.030 [main] INFO  api.endpoints.UserEndPoints - ==> GET Request: Fetching user with username: user105
+2025-11-11 10:35:12.465 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:35:12.466 [main] INFO  api.test.DDTests - ✓ User found on attempt 1: user105
+2025-11-11 10:35:12.467 [main] INFO  api.test.DDTests - ✓ User verification successful: user105
+2025-11-11 10:35:12.467 [main] INFO  api.test.DDTests - → Step 5: Deleting user (with retry logic)
+2025-11-11 10:35:12.467 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user105
+2025-11-11 10:35:13.912 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 404
+2025-11-11 10:35:14.717 [main] INFO  api.endpoints.UserEndPoints - ==> DELETE Request: Deleting user with username: user105
+2025-11-11 10:35:16.252 [main] INFO  api.endpoints.UserEndPoints - <== Response Status: 200
+2025-11-11 10:35:16.254 [main] INFO  api.test.DDTests - ✓ User deleted on attempt 2: user105
+2025-11-11 10:35:16.254 [main] INFO  api.test.DDTests - ✓ User deleted successfully: user105
+2025-11-11 10:35:16.254 [main] INFO  api.test.DDTests - ╔════════════════════════════════════════════════════════════════╗
+2025-11-11 10:35:16.255 [main] INFO  api.test.DDTests - ║  TEST PASSED: User = user105 ✓
+2025-11-11 10:35:16.255 [main] INFO  api.test.DDTests - ╚════════════════════════════════════════════════════════════════╝
+
+2025-11-11 10:35:16.257 [main] INFO  api.utilities.ExtentReportManager - ✓ Test PASSED: testCreateAndDeleteUser
+2025-11-11 10:35:16.279 [main] INFO  api.utilities.ExtentReportManager - ========== Flushing Extent Report ==========
+2025-11-11 10:35:16.314 [main] INFO  api.utilities.ExtentReportManager - ✓ Extent Report generated successfully!
+2025-11-11 10:35:16.314 [main] INFO  api.utilities.ExtentReportManager - Report Location: /Users/irfankhan/eclipse-workspace/PetStoreAutomation/reports/Test-Report-2025.11.11.10.34.29.html
