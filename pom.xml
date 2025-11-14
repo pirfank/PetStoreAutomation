@@ -42,6 +42,14 @@
             <version>5.2.2</version>
         </dependency>
 
+        <!-- FIXED: Lombok with annotation processor -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.32</version>
+            <scope>provided</scope>
+        </dependency>
+
         <!-- Log4j -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
@@ -109,7 +117,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Compiler Plugin -->
+            <!-- Compiler Plugin + Lombok annotation processor -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -117,6 +125,15 @@
                 <configuration>
                     <source>17</source>
                     <target>17</target>
+
+                    <annotationProcessorPaths>
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>1.18.32</version>
+                        </path>
+                    </annotationProcessorPaths>
+
                 </configuration>
             </plugin>
 
