@@ -45,11 +45,36 @@ public class UserTests {
     }
 
     @Test(priority = 2)
-    public void testGetUser() {
-        Response response = UserEndPoints.getUser(this.userPayload.getUsername());
-        response.then().log().all();
-        Assert.assertEquals(response.getStatusCode(), 200);
+    public void testGetUser() throws InterruptedException {
+
+        logger.info("******* Getting user********");
+
+        Response response = null;
+
+        int retries = 5;
+        int waitTime = 2000; // 2 seconds
+
+        for (int attempt = 1; attempt <= retries; attempt++) {
+
+            logger.info("GET Attempt " + attempt);
+
+            response = UserEndPoints.getUser(this.userPayload.getUsername());
+
+            int status = response.getStatusCode();
+
+            if (status == 200) {
+                logger.info("✓ User found on attempt " + attempt);
+                break;
+            }
+
+            Thread.sleep(waitTime);
+        }
+
+        // Assertion OUTSIDE the loop
+        Assert.assertEquals(response.getStatusCode(), 200,
+                "User not found after retries!");
     }
+
 
     @Test(priority = 3)
     public void testUpdateUser() {
