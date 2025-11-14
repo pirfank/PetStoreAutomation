@@ -60,12 +60,29 @@ public class UserTests2 {
 
     @Test(priority = 2)
     public void testGetUser() throws InterruptedException {
+
         logger.info("******* Getting user********");
 
-        Response response = retryGetUser(this.userPayload.getUsername());
-        response.then().log().all();
+        Response response = null;
+        int retries = 5;
+        int waitTime = 2000; // 2 sec
+
+        for (int i = 1; i <= retries; i++) {
+            logger.info("GET attempt " + i);
+
+            response = UserEndPoints.getUser(this.userPayload.getUsername());
+
+            if (response.getStatusCode() == 200) {
+                break;
+            }
+
+            Thread.sleep(waitTime); // wait before next attempt
+        }
+
         Assert.assertEquals(response.getStatusCode(), 200);
+        logger.info("✓ User retrieved successfully");
     }
+
 
     @Test(priority = 3)
     public void testUpdateUser() throws InterruptedException {
